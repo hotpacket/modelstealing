@@ -10,7 +10,7 @@ Models often work with an organization's most sensitive data. Because the sensit
 How feasible is a model stealing (model extraction) attack? What is the level of effort required?
 
 #### Data Sources
-To ensure this project's legality, I targeted a model whose author granted the public permission to steal it. HackThisAI contains a number of AI hacking challenges, many of them preserved from the infamous annual Defcon hacker conference. I have selected the "Stonks" challenge, rated medium difficulty. My objective was to create a perfect copy of a black-box classification model, where I had no access to the model's code or data. This black-box model was simulated by a Docker image (available in the HackThisAI challenge) that I interacted with via a REST API.
+To ensure this project's legality, I targeted a model whose author granted the public permission to steal it. [HackThisAI](https://github.com/JosephTLucas/HackThisAI/) contains a number of AI hacking challenges, many of them preserved from the infamous annual [Defcon](https://defcon.org) hacker conference. I have selected the ["Stonks"](https://github.com/JosephTLucas/HackThisAI/tree/main/challenge/medium_stonks) challenge, rated medium difficulty. My objective was to create a perfect copy of a black-box classification model, where I had no access to the model's code or data. This black-box model was simulated by a Docker image (available in the HackThisAI challenge) that I interacted with via a REST API.
 
 The black-box model provides buy/sell recommendations based on stock market data, specifically a stock's daily open, close, high, low, and volume. This particular model is a classification model, not a time series.
 
@@ -27,5 +27,5 @@ In the future, I would like to target more sophisticated models. In particular, 
 
 #### Outline of project
 
-- [Link to notebook 1]()
+[Jupyter Notebook](https://github.com/hotpacket/modelstealing/blob/main/steal-stonks.ipynb)
 
