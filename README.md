@@ -20,7 +20,7 @@ I created a dataset from public stock price data, and submitted it to the black-
 I tried four classification model types to create the stolen model: K-nearest neighbors, logistic regression, decision trees, and support vector machines.
 
 #### Results
-I demonstrated that I was able to create a perfect copy of the target model without any access to its source code or training data. 
+I demonstrated that I was able to create a 100% accurate copy of the target model without any access to its source code or training data. 
 
 #### Next steps
 In the future, I would like to target more sophisticated models. In particular, I would like to try to steal an image classification model, and then perform an evasion (misclassification) attack against my stolen copy of the model.
