@@ -1,7 +1,7 @@
 ### Model Stealing Attack
 
 #### Executive summary
-This is a demonstration of a model stealing (also known as model extraction) attack. This attack allows an adversary to create a copy a model without any access to the model's source code or training data. This is often a first step for an attacker who desires to perform more aggressive attacks such as evasion, inversion, or inference.
+This is a demonstration of a [model stealing](https://www.mlsecurity.ai/post/what-is-model-stealing-and-why-it-matters) (also known as model extraction) attack. This attack allows an adversary to create a copy a model without any access to the model's source code or training data. This is often a first step for an attacker who desires to perform more aggressive attacks such as evasion, inversion, or inference.
 
 #### Rationale
 Models often work with an organization's most sensitive data. Because the sensitive data and the model's source code are often kept private, organizations can erroneously assume that they are protected from cybersecurity threats. This project is a demonstration of the feasibility of stealing a machine learning model. 
