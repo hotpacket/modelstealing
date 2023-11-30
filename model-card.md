@@ -10,7 +10,7 @@ This is a demonstration of a model stealing (also known as model extraction) att
 
 There are two models to consider with this project, the original, "victim" model targeted for stealing, and the "stolen," or duplicated model.
 
-The victim model provides buy/sell recommendations based on stock market data, specifically a stock's daily open, close, high, low, and volume. The [author] (https://github.com/JosephTLucas) of the victim model has granted the public permission to steal it as a cybersecurity exercise. This victim model was available as a Docker image (downloaded [here](https://github.com/JosephTLucas/HackThisAI/tree/main/challenge/medium_stonks)) that I interacted with via a REST API.
+The victim model provides buy/sell recommendations based on stock market data, specifically a stock's daily open, close, high, low, and volume. The [author](https://github.com/JosephTLucas) of the victim model has granted the public permission to steal it as a cybersecurity exercise. This victim model was available as a Docker image (downloaded [here](https://github.com/JosephTLucas/HackThisAI/tree/main/challenge/medium_stonks)) that I interacted with via a REST API.
 
 ### Model date
 
@@ -31,7 +31,7 @@ Models often work with an organization's most sensitive data. Because the sensit
 
 ### Data 
 
-I created datasets from public stock price data for the last 4 years (NVDA.csv and AAPL.csv), submitted them to the victim model Docker image, and recorded the victim model's recommendations as the classification (i.e., label) I wanted my model to predict. More detail about the datasets can be found in the datasheet here.
+I created datasets from public stock price data for the last 4 years (nvidia.csv and AAPL.csv), submitted them to the victim model Docker image, and recorded the victim model's recommendations as the classification (i.e., label) I wanted my model to predict. More detail about the datasets can be found in the datasheet here.
 
 I had no access to the datasets originally used to train the victim model.
 
