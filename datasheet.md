@@ -161,77 +161,75 @@ not suitable for tasks involving word order._
 
 ### Was any preprocessing/cleaning/labeling of the data done (e.g., discretization or bucketing, tokenization, part-of-speech tagging, SIFT feature extraction, removal of instances, processing of missing values)?
 
-The model accepts three features.
+The model has three features:<br>
+
+- OC - Open price minus close price (per day)
+- HL - High price minus low price (per day)
+- VOL - Daily volume
+
+I computed OC and HL from the datasets before sending requests to the victim model.
 
 ### Was the “raw” data saved in addition to the preprocessed/cleaned/labeled data (e.g., to support unanticipated future uses)?
 
-_If so, please provide a link or other access point to the “raw” data._
+The nvidia.csv and AAPL.csv datasets are raw datasets.
 
 ### Is the software used to preprocess/clean/label the instances available?
 
-_If so, please provide a link or other access point._
+Yes, the code is in the Jupyter notebook.
 
 ### Any other comments?
+
+After preprocessing and adding the labels, the datasets were saved as "stonks-saved.csv" (Nvidia) and "stonks-saved2.csv" (Apple). I made these datasets are available for use in this repository, which makes interacting will the Docker image optional.
 
 ## Uses
 
-_These questions are intended to encourage dataset creators to reflect on the tasks
-for which the dataset should and should not be used. By explicitly highlighting these tasks,
-dataset creators can help dataset consumers to make informed decisions, thereby avoiding
-potential risks or harms._
-
 ### Has the dataset been used for any tasks already?
 
-_If so, please provide a description._
+Yes, the datasets were used to completed the "model stealing" project in this repository.
 
 ### Is there a repository that links to any or all papers or systems that use the dataset?
 
-_If so, please provide a link or other access point._
+Yes, [here](https://github.com/hotpacket/modelstealing/).
 
 ### What (other) tasks could the dataset be used for?
 
+Other stock prediction models.
+
 ### Is there anything about the composition of the dataset or the way it was collected and preprocessed/cleaned/labeled that might impact future uses?
 
-_For example, is there anything that a future user might need to know to avoid uses that
-could result in unfair treatment of individuals or groups (e.g., stereotyping, quality of
-service issues) or other undesirable harms (e.g., financial harms, legal risks) If so, please
-provide a description. Is there anything a future user could do to mitigate these undesirable
-harms?_
+No.
 
 ### Are there tasks for which the dataset should not be used?
 
-_If so, please provide a description._
+No.
 
 ### Any other comments?
+
+No.
 
 ## Distribution
 
 ### Will the dataset be distributed to third parties outside of the entity (e.g., company, institution, organization) on behalf of which the dataset was created? 
 
-_If so, please provide a description._
+The datasets consist of entirely public data. They will remain available in this repository.
 
 ### How will the dataset will be distributed (e.g., tarball on website, API, GitHub)?
 
-_Does the dataset have a digital object identifier (DOI)?_
+[GitHub](https://github.com/hotpacket/modelstealing/).
 
 ### When will the dataset be distributed?
 
 ### Will the dataset be distributed under a copyright or other intellectual property (IP) license, and/or under applicable terms of use (ToU)?
 
-_If so, please describe this license and/or ToU, and provide a link or other access point to,
-or otherwise reproduce, any relevant licensing terms or ToU, as well as any fees associated
-with these restrictions._
+No.
 
 ### Have any third parties imposed IP-based or other restrictions on the data associated with the instances?
 
-_If so, please describe these restrictions, and provide a link or other access point to, or
-otherwise reproduce, any relevant licensing terms, as well as any fees associated with these
-restrictions._
+No.
 
 ### Do any export controls or other regulatory restrictions apply to the dataset or to individual instances?
 
-_If so, please describe these restrictions, and provide a link or other access point to, or otherwise
-reproduce, any supporting documentation._
+No.
 
 ### Any other comments?
 
@@ -242,28 +240,28 @@ and communicate this plan with dataset consumers._
 
 ### Who is supporting/hosting/maintaining the dataset?
 
-### How can the owner/curator/manager of the dataset be contacted (e.g., email address)?
+I am.
 
 ### Is there an erratum?
 
-_If so, please provide a link or other access point._
+No.
 
 ### Will the dataset be updated (e.g., to correct labeling errors, add new instances, delete instances)?
 
-_If so, please describe how often, by whom, and how updates will be communicated to users (e.g., mailing list, GitHub)?_
+No.
 
 ### If the dataset relates to people, are there applicable limits on the retention of the data associated with the instances (e.g., were individuals in question told that their data would be retained for a fixed period of time and then deleted)?
 
-_If so, please describe these limits and explain how they will be enforced._
+N/A
 
 ### Will older versions of the dataset continue to be supported/hosted/maintained?
 
-_If so, please describe how. If not, please describe how its obsolescence will be communicated to users._
+No.
 
 ### If others want to extend/augment/build on/contribute to the dataset, is there a mechanism for them to do so?
 
-_If so, please provide a description. Will these contributions be validated/verified? If so,
-please describe how. If not, why not? Is there a process for communicating/distributing these
-contributions to other users? If so, please provide a description._
+GitHub fork.
 
 ### Any other comments?
+
+No.
