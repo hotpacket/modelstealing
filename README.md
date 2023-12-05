@@ -15,7 +15,7 @@ To ensure this project's legality, I targeted a model whose author granted the p
 The black-box model provides buy/sell recommendations based on stock market data, specifically a stock's daily open, close, high, low, and volume. This particular model is a classification model, not a time series.
 
 #### Methodology
-I created a dataset from public stock price data, and submitted it to the black-box model, and recorded its recommendations as the classification (my "y" values) I want my model to duplicate.
+I created a dataset from public stock price data, and submitted it to the black-box model, and recorded its recommendations as the classification (label) I want my model to duplicate.
 
 I tried four classification model types to create the stolen model: K-nearest neighbors, logistic regression, decision trees, and support vector machines.
 
